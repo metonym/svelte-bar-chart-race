@@ -1,0 +1,47 @@
+{
+  "name": "svelte-bar-chart-race",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Bar chart race visualization for Svelte",
+  "author": "Eric Liu (https://github.com/metonym)",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "package": "svelte-kit package",
+    "test": "vitest",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --ignore-path .gitignore --write ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@testing-library/svelte": "^3.0.3",
+    "@testing-library/user-event": "^13.5.0",
+    "jsdom": "^19.0.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.6.0",
+    "svelte": "^3.46.4",
+    "svelte-check": "^2.4.5",
+    "svelte-preprocess": "^4.10.4",
+    "svelte2tsx": "^0.5.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2",
+    "vitest": "^0.5.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metonym/svelte-bar-chart-race.git"
+  },
+  "homepage": "https://github.com/metonym/svelte-bar-chart-race",
+  "bugs": "https://github.com/metonym/svelte-bar-chart-race/issues",
+  "keywords": [
+    "svelte",
+    "svelte component",
+    "bar chart race"
+  ],
+  "prettier": {
+    "printWidth": 100
+  },
+  "type": "module"
+}

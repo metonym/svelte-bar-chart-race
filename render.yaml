@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: svelte-bar-chart-race
+    env: static
+    buildCommand: yarn build
+    staticPublishPath: build
+    pullRequestPreviewsEnabled: true
