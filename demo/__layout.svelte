@@ -18,6 +18,7 @@
   }
 
   body {
+    margin: 0;
     font-family: -apple-system, sans-serif;
     font-size: 1rem;
     letter-spacing: 0.01rem;
@@ -31,13 +32,10 @@
   main {
     margin: 2rem auto;
     padding: 1.5rem 3rem;
-    max-width: 720px;
+    max-width: 900px;
     border: 1px solid var(--border);
     border-radius: 8px;
-  }
-
-  input[type="range"] {
-    margin: 0;
+    background: var(--background);
   }
 
   button {
