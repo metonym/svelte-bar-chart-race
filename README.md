@@ -8,9 +8,9 @@ A bar chart race is a horizontal bar chart that animates bars over an interval (
 
 This component library provides:
 
-- **BarChartRace.svelte**: Provider component that accepts data, options with animation capabilities.
-- **Chart.svelte**: Chart visualization with the ability to customize the chart display and animation.
-- **Slider.svelte**: Range input slider to control the interval (current value).
+- **BarChartRace.svelte**: Parent component that accepts data, options and manages internal state
+- **Chart.svelte**: Child component that displays the chart with the ability to customize the chart display and animation
+- **Slider.svelte**: Child component that shows the range input to control the interval (current value)
 
 ## [Demo](https://svelte-bar-chart-race.onrender.com/) · [Svelte REPL](https://svelte.dev/repl/b9a14f3b6db9448486392dfc2728d6d7)
 ## Installation
