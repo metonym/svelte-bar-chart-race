@@ -15,6 +15,7 @@
   :root {
     --background: #fff;
     --border: #dfe6f5;
+    --color: #181b38;
   }
 
   body {
@@ -30,7 +31,7 @@
     margin-bottom: 1.5rem;
   }
   main {
-    margin: 2rem auto;
+    margin: 1rem auto 0 auto;
     padding: 1.5rem 3rem;
     max-width: 900px;
     border: 1px solid var(--border);
