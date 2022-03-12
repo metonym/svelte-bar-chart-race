@@ -35,4 +35,4 @@
 />
 <label for={id}>{labelText + "" || value}</label>
 
-<!-- @component `Slider` must be descendant of `BarChartRace`. -->
+<!-- @component `Slider` must be descendent of `BarChartRace`. -->

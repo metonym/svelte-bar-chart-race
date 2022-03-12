@@ -48,4 +48,4 @@
   {/each}
 </ol>
 
-<!-- @component `Chart` must be descendant of `BarChartRace`. -->
+<!-- @component `Chart` must be descendent of `BarChartRace`. -->
