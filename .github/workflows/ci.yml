@@ -21,7 +21,8 @@ jobs:
       - name: Test the library
         run: |
           yarn
+          yarn build
           yarn test & yarn run check
 
-      - name: Build the app and package the library
-        run: yarn build & yarn package
+      - name: Package the library
+        run: yarn package
