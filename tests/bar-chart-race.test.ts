@@ -1,7 +1,9 @@
 import type { SvelteComponent } from "svelte";
 import { afterEach, describe, expect, test } from "vitest";
 import userEvent from "@testing-library/user-event";
-import { Simple, TwoWayBinding, KitchenSink } from "../demo/exports";
+import Simple from "../demo/Simple.svelte";
+import TwoWayBinding from "../demo/TwoWayBinding.svelte";
+import KitchenSink from "../demo/KitchenSink.svelte";
 
 describe("BarChartRace", () => {
   let instance: null | SvelteComponent = null;

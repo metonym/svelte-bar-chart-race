@@ -5,5 +5,5 @@
       "svelte-bar-chart-race": ["src"]
     }
   },
-  "include": ["demo/*", "src/*", "test/*"]
+  "include": ["demo/*", "src/*", "tests/*"]
 }
