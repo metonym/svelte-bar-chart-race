@@ -1,4 +1,3 @@
-import path from "path";
 import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
 
@@ -11,13 +10,6 @@ const config = {
       lib: "src",
       routes: "demo",
       template: "demo/_app.html",
-    },
-    vite: {
-      resolve: {
-        alias: {
-          "svelte-bar-chart-race": path.resolve("src"),
-        },
-      },
     },
     prerender: {
       default: true,
