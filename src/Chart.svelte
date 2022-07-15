@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getContext, onDestroy } from "svelte";
+  import { getContext } from "svelte";
   import { flip } from "svelte/animate";
   import type { FlipParams } from "svelte/animate";
-  import type { BarChartRaceContext, BarChartRaceOptions, BarChartRaceValuesByKey } from "./shared";
+  import type { BarChartRaceContext } from "./shared";
 
   /**
    * Customize the animation delay, duration, and easing.
@@ -10,27 +10,14 @@
    */
   export let animate: FlipParams = {};
 
-  const ctx: BarChartRaceContext = getContext("BarChartRace");
-
-  let value = -1;
-  let valuesByKey: BarChartRaceValuesByKey = {};
-  let options: BarChartRaceOptions = {};
-  let unsubValue = ctx.value.subscribe((_value) => (value = _value));
-  let unsubValuesByKey = ctx.valuesByKey.subscribe((_valuesByKey) => (valuesByKey = _valuesByKey));
-  let unsubOptions = ctx.chartOptions.subscribe((_options) => (options = _options));
-
-  onDestroy(() => {
-    unsubValue();
-    unsubValuesByKey();
-    unsubOptions();
-  });
+  const { value, valuesByKey, chartOptions }: BarChartRaceContext = getContext("BarChartRace");
 </script>
 
 <ol style:padding="var(--chart-padding, 0)">
-  {#each valuesByKey[value] as datum (datum.title)}
+  {#each $valuesByKey[$value] as datum (datum.title)}
     <li animate:flip={animate}>
       <slot {datum}>
-        {datum.title}: {datum.value}{options.unit ?? ""}
+        {datum.title}: {datum.value}{$chartOptions.unit ?? ""}
       </slot>
       <svg
         width="100%"
@@ -40,7 +27,7 @@
       >
         <rect
           height="100%"
-          width="{(datum.value / options.max) * 100}%"
+          width="{(datum.value / $chartOptions.max) * 100}%"
           fill={datum.color || "#333"}
         />
       </svg>
