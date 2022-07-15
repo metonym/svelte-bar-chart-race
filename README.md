@@ -13,6 +13,7 @@ This component library provides:
 - **Slider.svelte**: Child component that shows the range input to control the interval (current value)
 
 ## [Demo](https://svelte-bar-chart-race.onrender.com/) · [Svelte REPL](https://svelte.dev/repl/b9a14f3b6db9448486392dfc2728d6d7)
+
 ## Installation
 
 ```bash
