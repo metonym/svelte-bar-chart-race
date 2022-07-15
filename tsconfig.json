@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "svelte-bar-chart-race": ["src"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": ["demo/*", "src/*", "tests/*"]
 }

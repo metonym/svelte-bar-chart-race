@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import * as API from "../src";
-import pkg from "../package.json";
+import * as pkg from "../package.json";
 
 describe(pkg.name, () => {
   it("has 0 dependencies", () => {
