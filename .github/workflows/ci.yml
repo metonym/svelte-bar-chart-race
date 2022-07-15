@@ -3,15 +3,13 @@ name: CI
 on:
   pull_request:
   push:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/cache@v2
         id: yarn-cache
         with:
@@ -23,6 +21,3 @@ jobs:
           yarn
           yarn build
           yarn test & yarn run check
-
-      - name: Package the library
-        run: yarn package
