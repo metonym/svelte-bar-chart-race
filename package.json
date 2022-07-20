@@ -14,21 +14,21 @@
     "format": "prettier --ignore-path .gitignore --write ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "1.0.0-next.36",
-    "@sveltejs/kit": "1.0.0-next.377",
+    "@sveltejs/adapter-static": "1.0.0-next.38",
+    "@sveltejs/kit": "1.0.0-next.384",
     "@testing-library/svelte": "^3.1.3",
-    "@testing-library/user-event": "^14.2.5",
+    "@testing-library/user-event": "^14.3.0",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.0",
     "svelte-preprocess": "^4.10.7",
-    "svelte2tsx": "^0.5.11",
+    "svelte2tsx": "^0.5.12",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
-    "vite": "^3.0.0",
-    "vitest": "^0.18.0"
+    "vite": "^3.0.2",
+    "vitest": "^0.18.1"
   },
   "repository": {
     "type": "git",
