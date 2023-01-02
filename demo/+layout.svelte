@@ -11,14 +11,14 @@
   <slot />
 </main>
 
-<style global>
+<style>
   :root {
     --background: #fff;
     --border: #dfe6f5;
     --color: #181b38;
   }
 
-  body {
+  :global(body) {
     margin: 0;
     font-family: -apple-system, sans-serif;
     font-size: 1rem;
@@ -26,11 +26,11 @@
     color: var(--color);
   }
 
-  h1 {
+  :global(h1) {
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
   }
-  main {
+  :global(main) {
     margin: 1rem auto 0 auto;
     padding: 1.5rem 3rem;
     max-width: 900px;
@@ -39,7 +39,7 @@
     background: var(--background);
   }
 
-  button {
+  :global(button) {
     margin-right: 4px;
     margin-bottom: 12px;
     padding: 6px 15px;
