@@ -1,6 +1,6 @@
 <script lang="ts">
   import { BarChartRace, Slider, Chart } from "svelte-bar-chart-race";
-  import { data } from "./data";
+  import { data } from "../data";
 </script>
 
 <BarChartRace {data}>

@@ -9,10 +9,7 @@ const config = {
     files: {
       lib: "src",
       routes: "demo",
-      template: "demo/_app.html",
-    },
-    prerender: {
-      default: true,
+      appTemplate: "demo/_app.html",
     },
   },
 };

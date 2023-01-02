@@ -6,6 +6,9 @@ export default {
   ...config,
   plugins: [svelte({ hot: false })],
   test: {
+    deps: {
+      registerNodeLoader: false,
+    },
     globals: true,
     environment: "jsdom",
   },
