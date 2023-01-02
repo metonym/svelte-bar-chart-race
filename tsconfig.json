@@ -9,5 +9,10 @@
     "resolveJsonModule": true,
     "baseUrl": "./"
   },
-  "include": ["demo/*", "src/*", "tests/*"]
+  "include": [
+    ".svelte-kit/**/*",
+    "demo/*",
+    "src/*",
+    "tests/*"
+  ]
 }
