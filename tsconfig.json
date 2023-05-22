@@ -1,6 +1,7 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
     "paths": {
       "$lib": ["src"],
       "$lib/*": ["src/*"],
@@ -9,10 +10,5 @@
     "resolveJsonModule": true,
     "baseUrl": "./"
   },
-  "include": [
-    ".svelte-kit/**/*",
-    "demo/*",
-    "src/*",
-    "tests/*"
-  ]
+  "include": [".svelte-kit/**/*", "demo/*", "src/*", "tests/*"]
 }
