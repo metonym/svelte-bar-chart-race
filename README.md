@@ -6,11 +6,11 @@
 
 A bar chart race is a horizontal bar chart that animates bars over an interval (usually time). The x-axis represents the bar chart values. The bars are sorted based on their value from highest to lowest as the interval changes.
 
-This component library provides:
+This library exports the following components:
 
-- **BarChartRace.svelte**: Parent component that accepts data, options and manages internal state
-- **Chart.svelte**: Child component that displays the chart with the ability to customize the chart display and animation
-- **Slider.svelte**: Child component that shows the range input to control the interval (current value)
+- **BarChartRace**: Parent component that accepts data, options and manages internal state
+- **Chart**: Child component that displays the chart with the ability to customize the chart display and animation
+- **Slider**: Child component that shows the range input to control the interval (current value)
 
 ## [Demo](https://svelte-bar-chart-race.onrender.com/) · [Svelte REPL](https://svelte.dev/repl/b9a14f3b6db9448486392dfc2728d6d7)
 
