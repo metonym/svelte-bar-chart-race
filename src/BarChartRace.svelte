@@ -51,15 +51,15 @@
   $: valuesByKey.set(
     data
       .flatMap((datum) => datum.values.map((values) => ({ ...datum, ...values })))
-      .reduce(
-        (values, value) => ({
-          ...values,
-          [value[options.key]]: values[value[options.key]]
-            ? [...values[value[options.key]], value].sort((a, b) => b.value - a.value)
-            : [value],
-        }),
-        {}
-      )
+      .reduce((values, value) => {
+        const currentKey = value[options.key];
+        const currentValue = values[value[options.key]];
+        values[currentKey] = currentValue
+          ? [...currentValue, value].sort((a, b) => b.value - a.value)
+          : [value];
+
+        return values;
+      }, {})
   );
   $: range.set(Object.keys($valuesByKey).map((_value) => Number(_value)));
   $: if ($value === -1) value.set($range[0]);
