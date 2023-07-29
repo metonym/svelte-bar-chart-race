@@ -4,6 +4,15 @@
   "license": "MIT",
   "description": "Bar chart race visualization for Svelte",
   "author": "Eric Liu (https://github.com/metonym)",
+  "type": "module",
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -13,21 +22,23 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --ignore-path .gitignore --write ."
   },
+  "peerDependencies": {
+    "svelte": "^3.51 || ^4"
+  },
   "devDependencies": {
-    "@sveltejs/adapter-static": "2.0.2",
-    "@sveltejs/kit": "^1.21.0",
-    "@sveltejs/package": "^1.0.1",
-    "@testing-library/svelte": "^3.2.2",
+    "@sveltejs/adapter-static": "2.0.3",
+    "@sveltejs/kit": "^1.22.3",
+    "@sveltejs/package": "^2.2.0",
+    "@testing-library/svelte": "^4.0.3",
     "@testing-library/user-event": "^14.4.3",
     "jsdom": "^22.1.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-svelte": "^2.10.1",
-    "svelte": "^3.59.1",
-    "svelte-check": "^3.4.4",
-    "svelte2tsx": "^0.6.16",
+    "prettier": "^3.0.0",
+    "prettier-plugin-svelte": "^3.0.3",
+    "svelte": "^4.1.1",
+    "svelte-check": "^3.4.6",
     "typescript": "^5.1.6",
-    "vite": "^4.3.9",
-    "vitest": "^0.32.2"
+    "vite": "^4.4.7",
+    "vitest": "^0.33.0"
   },
   "repository": {
     "type": "git",
@@ -40,8 +51,7 @@
     "svelte component",
     "bar chart race"
   ],
-  "prettier": {
-    "printWidth": 100
-  },
-  "type": "module"
+  "files": [
+    "dist"
+  ]
 }

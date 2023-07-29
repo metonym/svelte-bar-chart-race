@@ -61,7 +61,10 @@ export interface BarChartRaceOptions {
  */
 export type BarChartRaceRange = number[];
 
-export type BarChartRaceValuesByKey = Record<string, Array<BarChartRaceDatum & BarChartRaceValue>>;
+export type BarChartRaceValuesByKey = Record<
+  string,
+  Array<BarChartRaceDatum & BarChartRaceValue>
+>;
 
 export type BarChartRaceData = BarChartRaceDatum[];
 
