@@ -10,4 +10,7 @@ export default defineConfig({
       [pkg.name]: path.resolve("src"),
     },
   },
+  test: {
+    environment: "jsdom",
+  },
 });
