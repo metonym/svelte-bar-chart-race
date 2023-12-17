@@ -1,7 +1,11 @@
 <script lang="ts">
   import { setContext, onDestroy } from "svelte";
   import { writable } from "svelte/store";
-  import type { BarChartRaceData, BarChartRaceContext, BarChartRaceOptions } from "./shared";
+  import type {
+    BarChartRaceData,
+    BarChartRaceContext,
+    BarChartRaceOptions,
+  } from "./shared";
 
   export let data: BarChartRaceData = [];
 
@@ -50,7 +54,9 @@
   }
   $: valuesByKey.set(
     data
-      .flatMap((datum) => datum.values.map((values) => ({ ...datum, ...values })))
+      .flatMap((datum) =>
+        datum.values.map((values) => ({ ...datum, ...values }))
+      )
       .reduce((values, value) => {
         const currentKey = value[options.key];
         const currentValue = values[value[options.key]];
@@ -68,7 +74,7 @@
   $: chartOptions.set({ ...DEFAULT_OPTIONS, ...options });
 
   let isPlaying = false;
-  let timer: NodeJS.Timer;
+  let timer: NodeJS.Timeout;
   let currentIndex = 0;
 
   $: currentIndex = $range.indexOf($value);
