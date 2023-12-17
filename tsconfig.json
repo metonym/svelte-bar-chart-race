@@ -1,13 +1,4 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
-  "compilerOptions": {
-    "paths": {
-      "$lib": ["src"],
-      "$lib/*": ["src/*"],
-      "svelte-bar-chart-race": ["src"]
-    },
-    "resolveJsonModule": true,
-    "baseUrl": "./"
-  },
   "include": [".svelte-kit/**/*", "demo/*", "src/*", "tests/*"]
 }

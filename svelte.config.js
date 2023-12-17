@@ -11,6 +11,11 @@ const config = {
       routes: "demo",
       appTemplate: "demo/_app.html",
     },
+    alias: {
+      "svelte-bar-chart-race": "src",
+      $lib: "src",
+      "$lib/*": "src/*",
+    },
   },
 };
 
