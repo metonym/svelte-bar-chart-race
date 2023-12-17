@@ -21,7 +21,7 @@ describe("BarChartRace", () => {
 
     expect(target.querySelectorAll("li").length).toEqual(5);
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"Rust: 73.1% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"73.1%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"Rust: 73.1% <svg width="100%"><rect height="100%" width="73.1%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("2017");
   });
@@ -33,7 +33,7 @@ describe("BarChartRace", () => {
 
     expect(target.querySelectorAll("li").length).toEqual(5);
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"Rust: 78.9% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"78.9%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"Rust: 78.9% <svg width="100%"><rect height="100%" width="78.9%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("2018");
     expect(target.querySelector("strong")!.innerHTML).toEqual("2018");
@@ -41,7 +41,7 @@ describe("BarChartRace", () => {
     await userEvent.click(target.querySelectorAll("button")[0]);
 
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"Rust: 86.1% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"86.1%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"Rust: 86.1% <svg width="100%"><rect height="100%" width="86.1%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("2020");
     expect(target.querySelector("strong")!.innerHTML).toEqual("2020");
@@ -49,7 +49,7 @@ describe("BarChartRace", () => {
     await userEvent.click(target.querySelectorAll("button")[1]);
 
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"Rust: 73.1% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"73.1%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"Rust: 73.1% <svg width="100%"><rect height="100%" width="73.1%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("2017");
     expect(target.querySelector("strong")!.innerHTML).toEqual("null");
@@ -62,28 +62,28 @@ describe("BarChartRace", () => {
 
     expect(target.querySelectorAll("li").length).toEqual(5);
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"<strong>Rust</strong> 73.1% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"73.1%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"<strong>Rust</strong> 73.1% <svg width="100%"><rect height="100%" width="73.1%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("Year: 2017");
 
     await userEvent.click(target.querySelectorAll("button")[1]);
 
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"<strong>Rust</strong> 87.0% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"86.98%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"<strong>Rust</strong> 87.0% <svg width="100%"><rect height="100%" width="86.98%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("Year: 2021");
 
     await userEvent.click(target.querySelectorAll("button")[2]);
 
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"<strong>Rust</strong> 73.1% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"73.1%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"<strong>Rust</strong> 73.1% <svg width="100%"><rect height="100%" width="73.1%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("Year: 2017");
 
     await userEvent.click(target.querySelectorAll("button")[3]);
 
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
-      '"<strong>Rust</strong> 83.5% <svg width=\\"100%\\"><rect height=\\"100%\\" width=\\"83.5%\\" fill=\\"#dea584\\"></rect></svg> "',
+      `"<strong>Rust</strong> 83.5% <svg width="100%"><rect height="100%" width="83.5%" fill="#dea584"></rect></svg> "`,
     );
     expect(target.querySelector("label")!.innerHTML).toEqual("Year: 2019");
   });
