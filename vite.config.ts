@@ -1,5 +1,7 @@
+/// <reference types="vitest" />
+/// <reference types="@sveltejs/kit" />
 import { sveltekit } from "@sveltejs/kit/vite";
-import path from "path";
+import path from "node:path";
 import { defineConfig } from "vite";
 import pkg from "./package.json";
 
@@ -11,6 +13,7 @@ export default defineConfig({
     },
   },
   test: {
+    globals: true,
     environment: "jsdom",
   },
 });

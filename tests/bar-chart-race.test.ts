@@ -1,6 +1,5 @@
 import userEvent from "@testing-library/user-event";
 import type { SvelteComponent } from "svelte";
-import { afterEach, describe, expect, test } from "vitest";
 import KitchenSink from "../demo/KitchenSink/+page.svelte";
 import Simple from "../demo/Simple/+page.svelte";
 import TwoWayBinding from "../demo/TwoWayBinding/+page.svelte";

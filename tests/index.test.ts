@@ -1,4 +1,3 @@
-import { expect, it } from "vitest";
 import * as pkg from "../package.json";
 import * as API from "../src";
 
