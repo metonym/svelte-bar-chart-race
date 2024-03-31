@@ -28,7 +28,9 @@ describe("BarChartRace", () => {
   test("TwoWayBinding", async () => {
     const target = document.body;
 
-    instance = new TwoWayBinding({ target });
+    instance = new TwoWayBinding({
+      target,
+    });
 
     expect(target.querySelectorAll("li").length).toEqual(5);
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(
@@ -57,7 +59,9 @@ describe("BarChartRace", () => {
   test("KitchenSink", async () => {
     const target = document.body;
 
-    instance = new KitchenSink({ target });
+    instance = new KitchenSink({
+      target,
+    });
 
     expect(target.querySelectorAll("li").length).toEqual(5);
     expect(target.querySelectorAll("li")[0].innerHTML).toMatchInlineSnapshot(

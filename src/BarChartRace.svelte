@@ -34,7 +34,10 @@
   const value = writable(currentValue ?? -1);
   const valuesByKey = writable({});
   const range: BarChartRaceContext["range"] = writable([]);
-  const chartOptions = writable({ ...DEFAULT_OPTIONS, ...options });
+  const chartOptions = writable({
+    ...DEFAULT_OPTIONS,
+    ...options,
+  });
   const context: BarChartRaceContext = {
     value,
     valuesByKey,
@@ -55,7 +58,10 @@
   $: valuesByKey.set(
     data
       .flatMap((datum) =>
-        datum.values.map((values) => ({ ...datum, ...values }))
+        datum.values.map((values) => ({
+          ...datum,
+          ...values,
+        })),
       )
       .reduce((values, value) => {
         const currentKey = value[options.key];
@@ -65,13 +71,16 @@
           : [value];
 
         return values;
-      }, {})
+      }, {}),
   );
   $: range.set(Object.keys($valuesByKey).map((_value) => Number(_value)));
   $: if ($value === -1) value.set($range[0]);
   $: value.set(currentValue == null ? $range[0] : currentValue);
   $: currentValue = $value;
-  $: chartOptions.set({ ...DEFAULT_OPTIONS, ...options });
+  $: chartOptions.set({
+    ...DEFAULT_OPTIONS,
+    ...options,
+  });
 
   let isPlaying = false;
   let timer: NodeJS.Timeout;

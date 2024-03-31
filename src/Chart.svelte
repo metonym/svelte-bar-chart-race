@@ -10,7 +10,8 @@
    */
   export let animate: FlipParams = {};
 
-  const { value, valuesByKey, chartOptions }: BarChartRaceContext = getContext("BarChartRace");
+  const { value, valuesByKey, chartOptions }: BarChartRaceContext =
+    getContext("BarChartRace");
 </script>
 
 <ol style:padding="var(--chart-padding, 0)">

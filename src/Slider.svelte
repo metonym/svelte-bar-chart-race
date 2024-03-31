@@ -8,7 +8,8 @@
   /** Specify the slider label text. */
   export let labelText: any = "";
 
-  const { value, range, setValue }: BarChartRaceContext = getContext("BarChartRace");
+  const { value, range, setValue }: BarChartRaceContext =
+    getContext("BarChartRace");
 
   $: max = $range[$range.length - 1];
   $: min = $range[0];

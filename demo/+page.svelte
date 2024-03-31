@@ -1,7 +1,11 @@
 <ul>
   <li><a href="/Simple">Simple</a></li>
-  <li><a href="/TwoWayBinding">Two-way binding</a></li>
-  <li><a href="/KitchenSink">Kitchen sink</a></li>
+  <li>
+    <a href="/TwoWayBinding">Two-way binding</a>
+  </li>
+  <li>
+    <a href="/KitchenSink">Kitchen sink</a>
+  </li>
 </ul>
 
 <style>
