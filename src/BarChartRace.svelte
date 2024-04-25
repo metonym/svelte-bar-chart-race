@@ -83,7 +83,7 @@
   });
 
   let isPlaying = false;
-  let timer: NodeJS.Timeout;
+  let timer: Timer;
   let currentIndex = 0;
 
   $: currentIndex = $range.indexOf($value);
