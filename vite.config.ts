@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 /// <reference types="@sveltejs/kit" />
 import { sveltekit } from "@sveltejs/kit/vite";
 import path from "node:path";
@@ -11,9 +10,5 @@ export default defineConfig({
     alias: {
       [pkg.name]: path.resolve("src"),
     },
-  },
-  test: {
-    globals: true,
-    environment: "jsdom",
   },
 });

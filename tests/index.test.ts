@@ -9,11 +9,5 @@ it("has 0 dependencies", () => {
 it("has named exports", () => {
   // @ts-expect-error
   expect(API.default).toBeUndefined();
-  expect(Object.keys(API)).toMatchInlineSnapshot(`
-      [
-        "BarChartRace",
-        "Chart",
-        "Slider",
-      ]
-    `);
+  expect(Object.keys(API)).toEqual(["BarChartRace", "Chart", "Slider"]);
 });
