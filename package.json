@@ -24,7 +24,7 @@
     "package": "bun --bun svelte-package",
     "test": "bun test",
     "check": "bun --bun svelte-check --tsconfig ./tsconfig.json",
-    "format": "bun --bun prettier --write ."
+    "format": "bun --bun prettier --write .  --cache"
   },
   "peerDependencies": {
     "svelte": "^3.51 || ^4"
