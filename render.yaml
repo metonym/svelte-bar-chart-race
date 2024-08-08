@@ -1,7 +1,7 @@
 services:
   - type: web
     name: svelte-bar-chart-race
-    env: static
+    runtime: static
     buildCommand: bun install && bun run build
     staticPublishPath: build
     pullRequestPreviewsEnabled: true
