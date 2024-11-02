@@ -32,20 +32,20 @@
   "devDependencies": {
     "@happy-dom/global-registrator": "^14.12.3",
     "@sveltejs/adapter-static": "3.0.1",
-    "@sveltejs/kit": "^2.6.1",
-    "@sveltejs/package": "^2.3.5",
+    "@sveltejs/kit": "^2.7.4",
+    "@sveltejs/package": "^2.3.7",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@testing-library/svelte": "^4.2.3",
     "@testing-library/user-event": "^14.5.2",
-    "@types/bun": "^1.1.10",
-    "@types/jest": "^29.5.13",
-    "@types/node": "^20.16.10",
+    "@types/bun": "^1.1.12",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.5",
     "prettier": "^3.3.3",
     "prettier-plugin-svelte": "^3.2.7",
     "svelte": "^4.2.19",
     "svelte-check": "^3.8.6",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.8"
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
   },
   "repository": {
     "type": "git",
