@@ -83,7 +83,7 @@
   });
 
   let isPlaying = false;
-  let timer: Timer;
+  let timer: ReturnType<typeof setInterval>;
   let currentIndex = 0;
 
   $: currentIndex = $range.indexOf($value);
