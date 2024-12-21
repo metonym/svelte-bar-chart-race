@@ -40,6 +40,7 @@
     "@types/bun": "^1.1.14",
     "@types/jest": "^29.5.14",
     "@types/node": "^20.17.10",
+    "culls": "^0.1.1",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
     "svelte": "^4.2.19",
