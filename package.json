@@ -26,9 +26,6 @@
     "check": "bun --bun svelte-check --tsconfig ./tsconfig.json",
     "format": "bun --bun prettier --write .  --cache"
   },
-  "peerDependencies": {
-    "svelte": "^3.51 || ^4"
-  },
   "devDependencies": {
     "@happy-dom/global-registrator": "^14.12.3",
     "@sveltejs/adapter-static": "3.0.1",
