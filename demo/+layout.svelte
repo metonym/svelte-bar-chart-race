@@ -13,10 +13,9 @@
 
 <style>
   :root {
-    --background: #0d0d0d;
-    --border: #272727;
-    --border-interactive: #4f4f4f;
-    --border-interactive-hover: #6f6f6f;
+    --background: #191919;
+    --border-interactive: #5a5a5a;
+    --border-interactive-hover: #8f8f8f;
     --color: #eee;
   }
 
@@ -42,7 +41,6 @@
     margin: 1rem auto 0 auto;
     padding: 1rem 2rem;
     max-width: 900px;
-    border: 1px solid var(--border);
     background: var(--background);
   }
 
@@ -51,7 +49,6 @@
     margin-bottom: 12px;
     padding: 6px 15px;
     border: 1px solid var(--border-interactive);
-    border-radius: 6px;
     background: var(--background);
     color: var(--color);
     cursor: pointer;
