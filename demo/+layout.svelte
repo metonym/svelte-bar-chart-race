@@ -13,29 +13,36 @@
 
 <style>
   :root {
-    --background: #fff;
-    --border: #dfe6f5;
-    --color: #181b38;
+    --background: #0d0d0d;
+    --border: #272727;
+    --border-interactive: #4f4f4f;
+    --border-interactive-hover: #6f6f6f;
+    --color: #eee;
   }
 
   :global(body) {
     margin: 0;
     font-family: -apple-system, sans-serif;
-    font-size: 1rem;
+    font-size: 0.875rem;
     letter-spacing: 0.01rem;
+    color: var(--color);
+    background: var(--background);
+  }
+
+  :global(a) {
     color: var(--color);
   }
 
   :global(h1) {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
+
   :global(main) {
     margin: 1rem auto 0 auto;
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     max-width: 900px;
     border: 1px solid var(--border);
-    border-radius: 8px;
     background: var(--background);
   }
 
@@ -43,10 +50,15 @@
     margin-right: 4px;
     margin-bottom: 12px;
     padding: 6px 15px;
-    font-size: 14px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-interactive);
     border-radius: 6px;
     background: var(--background);
+    color: var(--color);
     cursor: pointer;
+    font-size: inherit;
+  }
+
+  :global(button:hover) {
+    border-color: var(--border-interactive-hover);
   }
 </style>
