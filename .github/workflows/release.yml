@@ -23,6 +23,10 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      # We need to build the SvelteKit site since `svelte-package` relies on `.svelte-kit`
+      - name: Build demo
+        run: bun run build
+
       - name: Build package
         run: bun run package
 

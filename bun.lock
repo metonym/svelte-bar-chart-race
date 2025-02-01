@@ -22,9 +22,6 @@
         "typescript": "^5.7.2",
         "vite": "^5.4.11",
       },
-      "peerDependencies": {
-        "svelte": "^3.51 || ^4",
-      },
     },
   },
   "packages": {
