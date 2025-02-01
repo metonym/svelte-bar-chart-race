@@ -1,6 +1,6 @@
 {
   "name": "svelte-bar-chart-race",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "description": "Bar chart race visualization for Svelte",
   "author": "Eric Liu (https://github.com/metonym)",
