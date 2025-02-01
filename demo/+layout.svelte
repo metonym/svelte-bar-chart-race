@@ -13,10 +13,12 @@
 
 <style>
   :root {
-    --background: #191919;
-    --border-interactive: #5a5a5a;
-    --border-interactive-hover: #8f8f8f;
-    --color: #eee;
+    --background: #fff;
+    --border: #e2e2e2;
+    --border-interactive: #0d0d0d;
+    --background-hover: #0d0d0d;
+    --color: #181b38;
+    --color-hover: #fff;
   }
 
   :global(body) {
@@ -25,22 +27,17 @@
     font-size: 0.875rem;
     letter-spacing: 0.01rem;
     color: var(--color);
-    background: var(--background);
-  }
-
-  :global(a) {
-    color: var(--color);
   }
 
   :global(h1) {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
-
   :global(main) {
     margin: 1rem auto 0 auto;
-    padding: 1rem 2rem;
+    padding: 1.5rem 3rem;
     max-width: 900px;
+    border: 1px solid var(--border);
     background: var(--background);
   }
 
@@ -48,14 +45,14 @@
     margin-right: 4px;
     margin-bottom: 12px;
     padding: 6px 15px;
+    font-size: inherit;
     border: 1px solid var(--border-interactive);
     background: var(--background);
-    color: var(--color);
     cursor: pointer;
-    font-size: inherit;
   }
 
   :global(button:hover) {
-    border-color: var(--border-interactive-hover);
+    background: var(--background-hover);
+    color: var(--color-hover);
   }
 </style>
