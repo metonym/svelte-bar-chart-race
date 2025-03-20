@@ -2,7 +2,7 @@
 
 [![NPM][npm]][npm-url]
 
-> Bar chart race visualization for Svelte
+> Featured in [Svelte Design Patterns](https://render.com/blog/svelte-design-patterns) (2022)
 
 A bar chart race is a horizontal bar chart that animates bars over an interval (usually time). The x-axis represents the bar chart values. The bars are sorted based on their value from highest to lowest as the interval changes.
 
