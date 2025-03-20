@@ -18,7 +18,7 @@ await plugin({
           ).then((processed) => processed.code),
           {
             filename: path,
-            generate: "dom",
+            generate: "client",
           },
         ).js.code,
         loader: "js",
