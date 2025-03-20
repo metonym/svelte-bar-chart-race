@@ -17,14 +17,17 @@ This library exports the following components:
 ## Installation
 
 ```bash
-# Yarn
-yarn add -D svelte-bar-chart-race
-
 # NPM
-npm i -D svelte-bar-chart-race
+npm i svelte-bar-chart-race
 
 # pnpm
-pnpm i -D svelte-bar-chart-race
+pnpm i svelte-bar-chart-race
+
+# Yarn
+yarn add svelte-bar-chart-race
+
+# Bun
+bun i svelte-bar-chart-race
 ```
 
 ## Usage
